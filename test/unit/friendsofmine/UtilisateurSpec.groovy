@@ -1,6 +1,13 @@
 package friendsofmine
 
 import grails.test.mixin.TestFor
+import spock.lang.Specification
+import spock.lang.Unroll
+
+/**
+ * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
+ */
+@TestFor(Utilisateur)
 class UtilisateurSpec extends Specification {
 
     @Unroll
@@ -43,10 +50,3 @@ class UtilisateurSpec extends Specification {
 
     }
 }
-import spock.lang.Specification
-import spock.lang.Unroll
-
-/**
- * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
- */
-@TestFor(Utilisateur)
