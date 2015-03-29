@@ -7,6 +7,10 @@ class Utilisateur {
     String sexe;
     Date dateDeNaissance;
 
+    static hasMany = [
+        activites: Activite
+    ]
+
     static constraints = {
         nom blank: false
         prenom blank: false

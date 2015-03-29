@@ -19,6 +19,9 @@ class UtilisateurSpec extends Specification {
         expect: "l'utilisateur est valide"
         utilisateur.validate() == true
 
+        and: "il n'est proprietaire d'aucune activite"
+        !utilisateur.activites
+
         where:
         unNom    | unPrenom  | unEmail     | unSexe | uneDateNaissance
         "Dupont" | "Jeanne"  | "jd@jd.com" | "F"    | new Date(1972, 6, 17)
