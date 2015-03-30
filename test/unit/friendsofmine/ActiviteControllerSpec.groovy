@@ -10,8 +10,10 @@ class ActiviteControllerSpec extends Specification {
 
     def populateValidParams(params) {
         assert params != null
-        // TODO: Populate valid properties like...
-        //params["name"] = 'someValidName'
+
+        params["titre"] = "Foot"
+        params["descriptif"] = "Foot"
+        params["titre"] = new Utilisateur(nom: "Hugues", prenom:"Odegaar", email: "hugues.odegaard@gmail.com", sexe: "M",dateDeNaissance: new Date())
     }
 
     void "Test the index action returns the correct model"() {

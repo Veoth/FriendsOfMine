@@ -36,8 +36,7 @@ class ActiviteController {
             return
         }
 
-        activiteInstance.save flush: true
-        //activiteService.insertOrUpdateActiviteForResponsable(activiteInstance, activiteInstance.responsable)
+        activiteInstance = activiteService.insertOrUpdateActiviteForResponsable(activiteInstance, activiteInstance.responsable)
 
         request.withFormat {
             form multipartForm {
@@ -64,8 +63,7 @@ class ActiviteController {
             return
         }
 
-        activiteInstance.save flush: true
-        //activiteService.insertOrUpdateActiviteForResponsable(activiteInstance,activiteInstance.responsable)
+        activiteInstance = activiteService.insertOrUpdateActiviteForResponsable(activiteInstance,activiteInstance.responsable)
 
         request.withFormat {
             form multipartForm {
@@ -84,8 +82,7 @@ class ActiviteController {
             return
         }
 
-        activiteInstance.delete flush: true
-        //activiteService.deleteActivite(activiteInstance)
+        activiteService.deleteActivite(activiteInstance)
 
         request.withFormat {
             form multipartForm {

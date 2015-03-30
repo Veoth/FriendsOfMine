@@ -13,6 +13,8 @@ class ActiviteService {
         responsable.addToActivites(activite)
         responsable.save()
 
+        activite.save()
+
         return activite
     }
 
