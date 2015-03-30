@@ -8,6 +8,7 @@ class BootStrap {
         new Utilisateur(prenom: "Jonas",nom: "Gonzalez",email: "ronron@gmail.com",sexe: "F",dateDeNaissance: new Date()).save();
 
         jeuTestService.createJeuTestFoActivite()
+
     }
     def destroy = {
     }
