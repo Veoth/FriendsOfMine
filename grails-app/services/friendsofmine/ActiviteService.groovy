@@ -21,8 +21,7 @@ class ActiviteService {
     void deleteActivite(Activite activite) {
         def responsable = activite.responsable
         responsable.removeFromActivites(activite)
-        responsable.save()
-
         activite.delete()
+        responsable.save()
     }
 }
