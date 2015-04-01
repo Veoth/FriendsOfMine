@@ -10,4 +10,8 @@ class Activite {
         descriptif nullable: true
         titre blank: false
     }
+
+    String toString() {
+        return "Titre : " + titre + " (Responsable: " + responsable.nom;
+    }
 }
